@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Privacy Policy – Nafaqati</title>
+  <meta name="description"
+    content="Privacy Policy for Nafaqati, an offline expense tracking app that categorizes transactions from SMS receipts and stores data locally." />
+  <meta name="theme-color" content="#0ea5e9" />
+  <style>
+    :root {
+      --bg: transparent;
+      --card: #ffffff;
+      --text: #0f574e;
+      --muted: #12141a;
+      --brand: #6cd9cb;
+      --accent: #46988f;
+      --border: #0e1a29;
+    }
+
+    .dark {
+      --bg: transparent;
+      --card: #12141a;
+      --text: #ffffff;
+      --muted: #DCF3F0;
+      --brand: #6cd9cb;
+      --accent: #46988f;
+      --border: #ffffff;
+    }
+
+    html,
+    body {
+      height: 100%
+    }
+
+    body {
+      margin: 0;
+      letter-spacing: 0.2px;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      background: var(--bg);
+      color: var(--text);
+    }
+
+    .container {
+      background: var(--bg);
+      margin: 0 auto;
+      padding: 24px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: clamp(20px, 3.5vw, 40px);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, .2);
+    }
+
+    h1,
+    h2,
+    h3 {
+      line-height: 1.2;
+      margin: 0 0 12px
+    }
+
+    h1 {
+      font-size: clamp(24px, 4vw, 40px);
+      letter-spacing: .3px
+    }
+
+    h2 {
+      font-size: clamp(20px, 3vw, 26px);
+      margin-top: 28px
+    }
+
+    p {
+      margin: 0 0 12px;
+      color: var(--muted)
+    }
+
+    ul {
+      margin: 8px 0 16px 22px;
+      color: var(--muted)
+    }
+
+    li {
+      margin: 6px 0
+    }
+
+    .meta {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      align-items: center;
+      margin-bottom: 18px;
+      color: var(--muted)
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: 6px 12px;
+      background: transparent
+    }
+
+    .badge .dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 999px;
+      background: var(--brand)
+    }
+
+    .cta {
+      margin-top: 24px;
+      font-size: 14px
+    }
+
+    a {
+      color: var(--brand);
+      text-underline-offset: 3px
+    }
+
+    .foot {
+      margin-top: 28px;
+      border-top: 1px dashed var(--border);
+      padding-top: 16px;
+      color: var(--muted);
+      font-size: 14px
+    }
+
+    .list-title {
+      font-weight: 600;
+      color: var(--text)
+    }
+
+    .table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 6px 0 16px
+    }
+
+    .table th,
+    .table td {
+      border: 1px solid var(--border);
+      padding: 10px;
+      text-align: left
+    }
+  </style>
+  <script>
+    function setTheme(theme) {
+      if (theme === 'dark') {
+        document.body.classList.add('dark');
+      } else {
+        document.body.classList.remove('dark');
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <main class="container" , aria-labelledby="Privacy Policy">
+    <h1 id="policy-title">Privacy Policy</h1>
+    <div class="meta" aria-label="Policy meta">
+      <span class="badge" title="App Name"><span class="dot" aria-hidden="true"></span><strong>Nafaqati</strong></span>
+      <span class="badge" title="Effective date">Effective: <time id="effective-date">October 29, 2025</time></span>
+      <span class="badge" title="Contact Email">Contact: <a
+          href="mailto:contact.spendex.team@gmail.com">contact.spendex.team@gmail.com</a></span>
+    </div>
+
+    <p>Nafaqati ("we," "our," or "us") values your privacy. This Privacy Policy explains what information our mobile
+      application collects, how it is used, and the choices you have. Our app is designed to work primarily
+      <strong>offline</strong> with data processed <strong>locally on your device</strong>.</p>
+
+    <h2 id="info-we-collect">1. Information We Collect</h2>
+    <p>We collect only what is necessary to provide core functionality and improve stability:</p>
+    <ul>
+      <li><span class="list-title">Transaction data derived from SMS receipts.</span> The app reads incoming SMS
+        <em>receipts</em> to automatically categorize transactions. Only transaction fields (e.g., amount, date,
+        merchant/description) are parsed. <strong>Full SMS content is not stored</strong>, and parsing occurs on-device.
+        You may disable SMS parsing in system permissions at any time.</li>
+      <li><span class="list-title">Crash diagnostics (Firebase Crashlytics).</span> Anonymous technical logs may include
+        device model, OS version, and crash traces to help us fix issues. No information about the content of your
+        transactions or personal messages is sent through Crashlytics.</li>
+      <li><span class="list-title">Local notifications.</span> The app uses <strong>local</strong> notifications (not
+        remote push) to deliver updates. Notification content is generated on your device and not transmitted to our
+        servers.</li>
+    </ul>
+
+    <h2 id="how-we-use">2. How We Use Information</h2>
+    <ul>
+      <li>To categorize and display your transactions and budgets.</li>
+      <li>To maintain and improve app performance and reliability via crash analytics.</li>
+      <li>To send you device-local updates.</li>
+    </ul>
+    <p>We do <strong>not</strong> sell your data. We do <strong>not</strong> use your data for advertising or profiling.
+    </p>
+
+    <h2 id="storage-security">3. Data Storage & Security</h2>
+    <ul>
+      <li>Your financial data is stored <strong>only on your device</strong> in secure local storage. We do not maintain
+        application servers that store your data.</li>
+      <li>You can export or delete your data from within the app or by clearing the app’s storage on your device.</li>
+      <li>You can create a local backup of your data and restore it later. The data in the backup file is always
+        encrypted for your privacy.</li>
+      <li>We implement industry-standard safeguards appropriate for local storage; however, no method of electronic
+        storage is 100% secure. We recommend enabling protection provided by the app, or your device’s lock screen.</li>
+    </ul>
+
+    <h2 id="third-parties">4. Third‑Party Services</h2>
+    <table class="table" aria-describedby="third-party-desc">
+      <caption id="third-party-desc" style="caption-side: bottom; color: var(--muted); padding-top: 6px;">We use minimal
+        third-party services solely for stability.</caption>
+      <thead>
+        <tr>
+          <th scope="col">Service</th>
+          <th scope="col">Purpose</th>
+          <th scope="col">Data Processed</th>
+          <th scope="col">Policy</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Firebase Crashlytics (Google LLC)</td>
+          <td>Crash reporting & diagnostics</td>
+          <td>Anonymous crash logs, device/OS info (no SMS content or financial data)</td>
+          <td><a href="https://firebase.google.com/support/privacy" rel="noopener noreferrer" target="_blank">Privacy &
+              Security</a></td>
+        </tr>
+      </tbody>
+    </table>
+    <p>Aside from Crashlytics, the app does not transmit your data to external services or our servers.</p>
+
+    <h2 id="your-control">5. Your Choices & Controls</h2>
+    <ul>
+      <li><strong>Permissions:</strong> You can revoke SMS read permission at any time in your device settings. Core
+        features may continue to function without automatic categorization.</li>
+      <li><strong>Notifications:</strong> Manage or disable local notifications in system settings.</li>
+      <li><strong>Data access & deletion:</strong> View, export, backup, restore or delete your locally stored data
+        through in‑app settings or by clearing the app’s storage.</li>
+    </ul>
+
+    <h2 id="children">6. Children’s Privacy</h2>
+    <p>Our app is not directed to children under 13. We do not knowingly collect personal information from children. If
+      you believe a child has provided information, please contact us so we can take appropriate action.</p>
+
+    <h2 id="changes">7. Changes to This Policy</h2>
+    <p>We may update this Privacy Policy from time to time. When we do, we will update the “Effective” date at the top
+      and make the revised policy available in‑app. Your continued use of the app after changes means you accept the
+      updated policy.</p>
+
+    <h2 id="contact">8. Contact Us</h2>
+    <p>If you have questions or concerns about this Privacy Policy or our data practices, contact us at <a
+        href="mailto:contact.spendex.team@gmail.com">contact.spendex.team@gmail.com</a>.</p>
+
+    <div class="foot">© <span id="year"></span> Nafaqati. All rights reserved.</div>
+  </main>
+
+  <script>
+    // Helper to inject the current year if desired
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+  <!-- Optional structured data to clarify the page purpose -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "PrivacyPolicy",
+    "name": "Privacy Policy – Nafaqati",
+    "inLanguage": "en",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Nafaqati",
+      "email": "contact.spendex.team@gmail.com"
+    },
+    "dateModified": "October 29, 2025",
+  }
+  </script>
+</body>
+
+</html>
